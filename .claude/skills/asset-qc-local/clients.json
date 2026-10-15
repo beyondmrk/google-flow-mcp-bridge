@@ -1,0 +1,37 @@
+{
+  "_readme": [
+    "Client registry for preflight.py / postflight.py (2026-09-03). One entry per pipeline skill.",
+    "engine: higgsfield-cli | higgsfield-mcp | flow.  account/workspace are what `higgsfield account status`",
+    "must print before the first fire; a mismatch is a FLAG (exit 2) - never fire on the wrong client's credits.",
+    "drive_root_id: the client's delivery root on the gdrive: rclone remote (reached by id, never by path).",
+    "models_allowed: what the skill doctrine permits; anything else is a FLAG until the user confirms.",
+    "brand_doc / packaging_ref: what the END-OF-GEN gate reads before calling a batch brand-compliant."
+  ],
+  "flow": {
+    "skill": "flow-local",
+    "engine": "flow",
+    "account": "<your Google account signed in to Flow>",
+    "account_note": "Not a client account. Verify the logged-in avatar in Edge and run SETTINGS-ASSERT before every prompt; the Flow project name must match the local project folder.",
+    "models_allowed": [
+      "nano_banana_2",
+      "google_omni",
+      "omni_flash",
+      "veo_3_1_lite",
+      "veo_3_1"
+    ],
+    "models_note": "Stills: Nano Banana 2 (free). Motion: Google Omni (12cr/8s) or Veo 3.1 Lite (5cr) per the user's call. Never buy credits.",
+    "local_root": ".",
+    "drive_root_id": "",
+    "drive_root_note": "Deliveries go where the brief says; pass --drive-folder-id, or skip Drive when the deliverable is handed over locally",
+    "brand_doc": ".claude/skills/flow-local/SKILL.md",
+    "packaging_ref": "",
+    "packaging_rule": "No product packaging - the mascot / UGC person and the beat graphic are the brand surface. Numbers on screen must match the manifest exactly.",
+    "brand_rules": [
+      "Every number spoken and shown matches the manifest `spoken` / `dialogue` fields",
+      "No captions, subtitles, logos or watermarks on generated frames",
+      "Identity holds against project.char_ref across every line",
+      "Brand / compliance check on the brand field before firing"
+    ],
+    "qa_profile": "flow"
+  }
+}

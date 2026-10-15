@@ -1,0 +1,11 @@
+/*
+!/.claude/
+!/mcp/
+!/_REGISTRY/
+!/.mcp.json
+!/.gitignore
+!/README.md
+!/requirements-qa.txt
+__pycache__/
+.pytest_cache/
+_flow_mcp_test/

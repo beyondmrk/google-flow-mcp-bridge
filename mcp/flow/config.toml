@@ -1,0 +1,5 @@
+# Paths are relative to mcp/flow. work_root = the clone root, where your project folders live.
+work_root = "../.."
+denied_roots = []
+# Uncomment if Edge is installed somewhere else:
+# edge_exe = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"

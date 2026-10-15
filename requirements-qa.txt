@@ -1,0 +1,12 @@
+# QA + preflight/postflight scripts (asset-qc-local). ffmpeg/ffprobe must also be on PATH.
+pillow
+numpy
+opencv-python
+mediapipe
+ultralytics
+rapidfuzz
+rapidocr-onnxruntime
+faster-whisper
+openai-whisper
+reportlab
+six

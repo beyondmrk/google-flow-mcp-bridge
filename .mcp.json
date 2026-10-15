@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "flow": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "mcp/flow",
+        "run",
+        "flow-mcp"
+      ]
+    }
+  }
+}

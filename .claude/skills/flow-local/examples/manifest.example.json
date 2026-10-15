@@ -1,0 +1,39 @@
+{
+  "project": {
+    "_note": "Copy to <project>/Creatives/<name>.json. char_ref needs a cropped model sheet beside it (CHAR_MASCOT_panels/ with front, profile, three_quarter, closeup .png - charsheet.py) or flow_fire.py refuses CHAR_NO_SHEET. A relative char_ref resolves against the working directory, so prefer an absolute path inside work_root.",
+    "slug": "lighthouse_coffee",
+    "client": "flow",
+    "char_ref": "Elements/Stills/_refs/CHAR_MASCOT.png"
+  },
+  "shots": [
+    {
+      "tag": "L01",
+      "duration": 6,
+      "clipName": "LH_line01",
+      "outName": "claude_lighthouse_coffee_line01.png",
+      "angle": "front",
+      "spoken": "Hi, I'm Beacon, and the coffee down at the harbour cafe is worth the climb every morning.",
+      "still_prompt": "A friendly cartoon lighthouse mascot with a round face in its lantern room, standing on a sunny harbour pier beside a small seaside cafe, vertical 9:16, soft morning light, no captions, no on-screen text",
+      "i2v_prompt": {
+        "dialogue": "Hi, I'm Beacon, and the coffee down at the harbour cafe is worth the climb every morning.",
+        "voice_lock": "warm, cheerful mid-range voice, relaxed friendly pace, slight seaside storyteller lilt, no announcer energy",
+        "action": "Beacon waves at the camera and talks warmly while the camera drifts slowly closer; gulls glide past behind him."
+      }
+    },
+    {
+      "tag": "L02",
+      "duration": 8,
+      "clipName": "LH_line02",
+      "outName": "claude_lighthouse_coffee_line02.png",
+      "angle": "three_quarter",
+      "refs": [],
+      "spoken": "Fresh pastries come out of the oven at seven, so tap below and save your seat before the fishermen take them all.",
+      "still_prompt": "The same cartoon lighthouse mascot leaning toward the cafe window where a tray of fresh pastries sits, vertical 9:16, warm morning light, no captions, no on-screen text",
+      "i2v_prompt": {
+        "dialogue": "Fresh pastries come out of the oven at seven, so tap below and save your seat before the fishermen take them all.",
+        "voice_lock": "warm, cheerful mid-range voice, relaxed friendly pace, slight seaside storyteller lilt, no announcer energy",
+        "action": "Beacon leans toward the pastry tray and points at it with a grin as the camera pans gently to follow him."
+      }
+    }
+  ]
+}

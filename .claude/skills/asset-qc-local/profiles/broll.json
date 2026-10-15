@@ -1,0 +1,24 @@
+{
+  "name": "broll",
+  "_note": "b-roll folders: muted clips, 1k+ stills (masters 2k: --set still_min_short_side=2048)",
+  "still_min_short_side": 1024,
+  "audio": "forbid",
+  "duration_default": null,
+  "text": {
+    "mode": "warn",
+    "min_conf": 0.6,
+    "clip_samples": 4,
+    "allow": [],
+    "clip_min_conf": 0.8,
+    "min_len": 3,
+    "fuzzy": 0.6
+  },
+  "identity": {
+    "ref": null,
+    "cos_fail": 0.4,
+    "cos_warn": 0.6,
+    "clip_samples": 5,
+    "require_face": false,
+    "_note": "folder mode: pass the hero anchor with --set identity.ref=<path>"
+  }
+}
